@@ -10,10 +10,10 @@ function calc() {
   if (Q == '') {
     document.getElementById("output-field").value = '';
   } else {
-    if ((P*1000) % 100 == 0) {
-      document.getElementById("output-field").value = P.toFixed(2);
-    } else if ((P*1000) % 10 == 0) {
+    if ((P*1000) % 10 == 0) {
       document.getElementById("output-field").value = P.toFixed(1);
+    } else if ((P*1000) % 100 == 0) {
+      document.getElementById("output-field").value = P.toFixed(2);
     } else {
       document.getElementById("output-field").value = P.toFixed(3);
     }

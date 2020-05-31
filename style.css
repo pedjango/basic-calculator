@@ -1,6 +1,6 @@
 body {
   background-color: #ADD8E6;
-  height: 80vh;
+  height: 90vh;
   padding: 0;
   margin: 0 auto;
 }
@@ -109,6 +109,7 @@ input {
 
 footer {
   margin-top: 30px;
+  padding-bottom: 20px;
 }
 
 #my-link {

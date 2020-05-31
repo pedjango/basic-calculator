@@ -1,6 +1,6 @@
 body {
   background-color: #ADD8E6;
-  height: 90vh;
+  height: 80vh;
   padding: 0;
   margin: 0 auto;
 }
@@ -19,8 +19,7 @@ span {
 }
 
 input {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  width: 360px;
   border: none;
   background-color: mintcream;
   height: 50px;
@@ -28,9 +27,28 @@ input {
 }
 
 #input-field {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#output-field {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 20px;
+  text-align: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*
+#input-field {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  text-align: left;
+  
   width: 230px;
   margin-right: -10px;
   padding-left: 10px;
@@ -39,10 +57,11 @@ input {
 #output-field {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  text-align: right;
+  
   width: 130px;
   padding-right: 10px;
 }
+*/
 
 /* On screens that are 550px or less */
 @media screen and (max-width: 550px) {
@@ -53,14 +72,18 @@ input {
     font-size: 18px;
   }
   input {
-    width: 155px !important;
+    width: 310px !important;
+    height: 45px;
+    font-size: 22px;
   }
+  /*
   input#input-field {
     width: 66%;
   }
   input#output-field {
     width: 34%;
   }
+  */
   button.btn {
     margin: 6px;
     width: 60px;
@@ -84,14 +107,18 @@ input {
     font-size: 14px;
   }
   input {
-    width: 125px !important;
+    width: 250px !important;
+    height: 40px;
+    font-size: 20px;
   }
+  /*
   input#input-field {
     width: 66%;
   }
   input#output-field {
     width: 34%;
   }
+  */
   button.btn {
     margin: 5px;
     width: 50px;

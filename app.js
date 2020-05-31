@@ -8,27 +8,13 @@ function calc() {
   let Q = document.getElementById("input-field").value;
   let P = eval(Q);
 
-  /*
-  if (Q == '') {
-    document.getElementById("output-field").value = '';
-  } else {
-    if ((P*1000) % 10 == 0) {
-      document.getElementById("output-field").value = P.toFixed(2);
-    } else if ((P*1000) % 10 == 0 ) {
-      document.getElementById("output-field").value = P.toFixed(1);
-    } else {
-      document.getElementById("output-field").value = P.toFixed(3);
-    }
-  }
-  */
-
   if (Q == "") {
     document.getElementById("output-field").value = "";
   } else {
     if ((P * 10) % 10 == 0) {
-      document.getElementById("output-field").value = P.toFixed();
+      document.getElementById("output-field").value = Q + " = " + P.toFixed();
     } else {
-      document.getElementById("output-field").value = P.toFixed(2);
+      document.getElementById("output-field").value = Q + " = " + P.toFixed(2);
     }
   }
 }
@@ -36,7 +22,7 @@ function calc() {
 // clear the screen
 function cls() {
   document.getElementById("input-field").value = "";
-  document.getElementById("output-field").value = "";
+  // document.getElementById("output-field").value = "";
 }
 
 // clear the last character
